@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.wd.ares.bean.WUser;
-import com.wd.ares.service.DataSoruceService;
+import com.wd.ares.db.service.DbUtilsTemplate;
+
 
 
 
@@ -16,14 +17,14 @@ import com.wd.ares.service.DataSoruceService;
 @Controller
 public class WdController {
 	
+	
 	@Inject
-	private DataSoruceService  dss;
+	private DbUtilsTemplate  dbUtilsTmpl;
 	
 	@RequestMapping(value = "/wd/user",method = {RequestMethod.POST, RequestMethod.GET})
 	@ResponseBody	
 	public WUser  getUser(){
 		WUser user = new WUser();
-		dss.excuteSql("sql");
 		return user;
 		
 	}
