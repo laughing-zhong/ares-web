@@ -25,6 +25,7 @@ public class WdController {
 	@ResponseBody	
 	public WUser  getUser(){
 		WUser user = new WUser();
+		//dbUtilsTmpl.find(WUser.class, sql, param)
 		return user;
 		
 	}

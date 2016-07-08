@@ -25,41 +25,7 @@
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
     </bean>
 
-   <!--  <context:component-scan base-package="com.ea.vanguard.game.simulator.rest"/>   --> 
+ 	<context:component-scan base-package="com.wd.ares.service"/>
+    <context:component-scan base-package="com.wd.ares.controller"/>
 
-  
-	<!-- selects a static view for rendering without the need for an explicit 
-		controller -->
-	<!-- <mvc:view-controller path="/" view-name="index" />
-	<mvc:view-controller path="/" view-name="login" />
-    <mvc:view-controller path="default" view-name="default" />	
-	<mvc:view-controller path="/admin" view-name="/admin/adduser" />
-	<mvc:view-controller path="/logout_success" view-name="logout_success" />
-	
-	<mvc:resources mapping="/resources/**" location="/web-resources/flatui/" />
-	
-	 -->
-	
-	<!-- <context:component-scan base-package="com.ares.web.controller" />
-	<context:component-scan base-package="com.ares.app.service.rpc" />
-	<context:component-scan base-package="com.ares.app.admincontroller"/>
- -->
- 
- 
- 	  <context:component-scan base-package="com.wd.ares.service"/>
- 
-      <context:component-scan base-package="com.wd.ares.controller"/>
- <!--  <context:component-scan base-package="mybatis" />
-	 
-	 <bean id="beetlConfig" class="org.beetl.ext.spring.BeetlGroupUtilConfiguration" init-method="init" />
-	 
-	 <bean id="viewResolver" class="org.beetl.ext.spring.BeetlSpringViewResolver">
-		<property name="contentType" value="text/html;charset=UTF-8"></property>
-		<property name="prefix" value="WEB-INF/views/"></property>
-		<property name="suffix" value=".btl"></property>
-	</bean>
-	-->	
-	
-	 
-	
 </beans>
