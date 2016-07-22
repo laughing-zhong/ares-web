@@ -2,8 +2,6 @@ package com.wd.ares.controller;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.inject.Inject;
@@ -14,8 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.wd.ares.bean.WUser;
-import com.wd.ares.db.service.DbUtilsTemplate;
+import com.wd.ares.bean.WdRequestBean;
 
 
 
@@ -29,7 +26,7 @@ public class WdController {
 	
 	@RequestMapping(value = "/wd/user",method = {RequestMethod.POST, RequestMethod.GET})
 	@ResponseBody	
-	public String getUser() throws SQLException {
+	public String getUser(WdRequestBean reqiestBean) throws SQLException {
 		Connection con = dataSource.getConnection();
 		CallableStatement cstmt = con.prepareCall("{call dbo.wdProc_k3wsi_allprocess(?,?,?)}");
 		cstmt.setString(1, "201");
