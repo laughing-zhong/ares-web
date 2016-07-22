@@ -7,10 +7,6 @@ import lombok.Data;
 
 @Data
 public class WdRequsetBeanList {
-	
-	public WdRequsetBeanList(){
-		
-	}
-	private List<WdRequestBean> ReqValues = new ArrayList<WdRequestBean>();
+	private List<WdRequestBean> reqValues = new ArrayList<WdRequestBean>();
 
 }

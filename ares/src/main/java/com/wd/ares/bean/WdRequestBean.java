@@ -6,7 +6,7 @@ import lombok.Data;
 public class WdRequestBean {
     private String    FEntryID_SRC;
     private String    FInterID_SRC;
-    private String    FItemID;
+    private String    fItemID;
     private String    FAuxQty_HG;
     private String    FSecQty_HG;
     private String    FQty_HG;
