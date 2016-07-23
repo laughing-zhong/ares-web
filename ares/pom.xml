@@ -165,24 +165,7 @@
 
 		<!-- Serialization -->
 
-		<dependency>
-			<groupId>com.google.protobuf</groupId>
-			<artifactId>protobuf-java</artifactId>
-			<version>2.5.0</version>
-		</dependency>
 
-		<dependency>
-			<groupId>com.googlecode.protobuf-java-format</groupId>
-			<artifactId>protobuf-java-format</artifactId>
-			<version>1.2</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>org.apache.activemq.protobuf</groupId>
-			<artifactId>activemq-protobuf</artifactId>
-			<version>1.1</version>
-		</dependency>
 
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -223,12 +206,6 @@
 			<groupId>org.apache.tomcat</groupId>
 			<artifactId>tomcat-jdbc</artifactId>
 			<version>7.0.39</version>
-		</dependency>
-
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.24</version>
 		</dependency>
 
 
@@ -413,48 +390,18 @@
 			<version>5.2.2.Final</version>
 		</dependency>
 
-
-
 		<dependency>
-			<groupId>com.googlecode.concurrentlinkedhashmap</groupId>
-			<artifactId>concurrentlinkedhashmap-lru</artifactId>
-			<version>1.4</version>
+			<groupId>commons-dbutils</groupId>
+			<artifactId>commons-dbutils</artifactId>
+			<version>1.6</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.mongodb</groupId>
-			<artifactId>mongo-java-driver</artifactId>
-			<version>3.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.beetl</groupId>
-			<artifactId>beetl-core</artifactId>
-			<version>2.2.3</version>
-		</dependency>
-		<!-- 添加mybatis的核心包 -->
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis</artifactId>
-			<version>3.2.8</version>
-		</dependency>
-		<!-- 添加mybatis与Spring整合的核心包 -->
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis-spring</artifactId>
-			<version>1.2.4</version>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.8</version>
 		</dependency>
 
-	<dependency>
-		<groupId>commons-dbutils</groupId>
-		<artifactId>commons-dbutils</artifactId>
-		<version>1.6</version>
-	</dependency>
-	<dependency>
-		<groupId>org.projectlombok</groupId>
-		<artifactId>lombok</artifactId>
-		<version>1.16.8</version>
-	</dependency>
-		
 
 
 	</dependencies>
