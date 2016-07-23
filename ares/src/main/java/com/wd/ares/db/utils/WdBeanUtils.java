@@ -4,9 +4,9 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.List;
 
-import com.wd.ares.bean.WdRequestBean;
+import com.wd.ares.bean.WdRequest;
 
-public class BeanUtils {
+public class WdBeanUtils {
 	public static String concertBeanToInsertValue(Object msgBean) {
 		Field[] fields = msgBean.getClass().getDeclaredFields();
 		StringBuilder sb = new StringBuilder();
@@ -15,7 +15,8 @@ public class BeanUtils {
 			for(int i = 0 ; i < fields.length; ++i){
 				Field field = fields[i];
 				String fieldName = field.getName();
-				String methodName = "get" + fieldName;
+				System.out.println("filed Name = " + fieldName);
+				String methodName = "get" + fieldName.replaceFirst(fieldName.substring(0, 1),fieldName.substring(0, 1).toUpperCase()) ;
 				Method getMethod = msgBean.getClass().getMethod(methodName, null);
 				String value = (String) getMethod.invoke(msgBean, null);
 				sb.append("'");
@@ -34,14 +35,18 @@ public class BeanUtils {
 		return null;
 	}
 	
-	public static String concertBeanListToInsertValue(List<Object> msgBeans){
-	
-		return null;
+	public static String concertBeanListToInsertValue(List<?> msgBeans){
+		StringBuilder sb = new StringBuilder();
+		for(Object obj : msgBeans){
+			sb.append(concertBeanToInsertValue(obj));
+			sb.append(",");	
+		}	
+		return sb.substring(0,  sb.length() - 1);
 	}
 	
 	public static void main(String[] args) {
-		WdRequestBean  msgBean = new WdRequestBean();
-		msgBean.setFEntryID_SRC("aaa");
+		WdRequest  msgBean = new WdRequest();
+		msgBean.setFauxPropId("aa");
 		String values = concertBeanToInsertValue(msgBean);
 		System.out.println("valued = " + values);
 	}

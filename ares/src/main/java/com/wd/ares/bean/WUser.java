@@ -1,19 +1,10 @@
 package com.wd.ares.bean;
 
+import lombok.Data;
+
+@Data
 public class WUser {
-	private String userName;
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-	public String getUserId() {
-		return userId;
-	}
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
+	private String UserName;
 	private String userId;
 
 }
