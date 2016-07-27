@@ -4,7 +4,7 @@
  * All right  reserved	
  * Created on 2016年6月22日 
  */
-package com.wd.ares.db.service;
+package com.wd.ares.db.utils;
 /**
  *@author wesley E-mail:wiqi.zhong@gmail.com
  *

@@ -6,7 +6,6 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
 import javax.sql.DataSource;
 
 import org.springframework.stereotype.Controller;
@@ -26,7 +25,7 @@ public class WdController {
 	
 	@RequestMapping(value = "/wd",method = { RequestMethod.POST, RequestMethod.GET })
 	@ResponseBody	
-	public String getUser(@RequestBody WdRequsetBeanList requestBean, HttpServletRequest request) throws SQLException, IOException {
+	public String getUser(@RequestBody WdRequsetBeanList requestBean) throws SQLException, IOException {
 		Connection con = dataSource.getConnection();	
 		String insertValues = WdBeanUtils.concertBeanListToInsertValue(requestBean.getWdReqValues());
 		System.out.println(" values = " + insertValues);
