@@ -47,7 +47,7 @@ public class WdErpRpcController {
 			response.setResponseCode(MsgState.NO_SERVICE);
 			return response;
 		}
-		String   methodName  = request.getRpcService();		
+		String   methodName  = request.getRpcMethod();		
 		Method method = this.GetMethod(service, methodName);
 		if(method == null){
 			response.setResponseCode(MsgState.NO_METHOD);
