@@ -1,5 +1,5 @@
 package com.wd.ares.db.service;
 
-public interface WdService {
+public interface RpcService {
 
 }

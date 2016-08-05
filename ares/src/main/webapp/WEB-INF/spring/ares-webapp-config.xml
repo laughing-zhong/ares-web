@@ -23,7 +23,8 @@
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
     </bean>
 
- 	<context:component-scan base-package="com.wd.ares.service"/>
+ 	<context:component-scan base-package="com.wd.ares.db.service"/>
     <context:component-scan base-package="com.wd.ares.controller"/>
+    <context:component-scan base-package="com.wd.ares.rpc"/>
 
 </beans>

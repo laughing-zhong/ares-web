@@ -28,10 +28,5 @@
 		<property name="validationQuery" value="${jdbc.validationQuery}" />
 		<property name="testWhileIdle" value="${jdbc.testWhileIdle}" />
 		<property name="timeBetweenEvictionRunsMillis" value="${jdbc.timeBetweenEvictionRunsMillis}" />
-	</bean>
-	
-	
-	<bean id="dbUtilsTemplate" class="com.wd.ares.db.service.DbUtilsTemplate">
-		<property name="dataSource" ref="dataSource" />
-	</bean> 	 
+	</bean> 
 </beans>
