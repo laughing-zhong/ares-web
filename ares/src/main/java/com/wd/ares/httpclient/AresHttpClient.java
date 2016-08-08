@@ -53,8 +53,7 @@ public class AresHttpClient {
 		request.setRpcService(rpcService);
 		request.setRpcMethod(method);
 		request.setPayLoad(body);
-		
-		
+	
 		HttpClientBuilder httpClientBuilder = HttpClientBuilder.create(); 
 	    //HttpClient  
         CloseableHttpClient closeableHttpClient = httpClientBuilder.build(); 

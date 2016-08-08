@@ -35,8 +35,4 @@ public class AresFileReader {
         }
         return null;
     }
-    
-    public static void main(String[] args){
-    	readFileByBytes("D:/wd.xml");
-    }
 }
