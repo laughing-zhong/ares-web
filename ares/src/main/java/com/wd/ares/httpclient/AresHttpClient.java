@@ -17,7 +17,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wd.ares.bean.WdBaseRequest;
 import com.wd.ares.bean.WdRequest;
-import com.wd.ares.bean.WdRequsetBeanList;
+import com.wd.ares.bean.request.WdRequsetBeanList;
 import com.wd.ares.utils.AresFileReader;
 
 public class AresHttpClient {

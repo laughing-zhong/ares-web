@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 
 import org.springframework.stereotype.Component;
 
-import com.wd.ares.bean.WdRequsetBeanList;
+import com.wd.ares.bean.request.WdRequsetBeanList;
 import com.wd.ares.db.utils.WdBeanUtils;
 
 @Component

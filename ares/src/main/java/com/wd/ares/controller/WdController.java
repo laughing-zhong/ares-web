@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.wd.ares.bean.WdRequsetBeanList;
+import com.wd.ares.bean.request.WdRequsetBeanList;
 import com.wd.ares.db.utils.WdBeanUtils;
 
 @Controller
